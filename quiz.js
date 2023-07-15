@@ -36,11 +36,12 @@ function checkAnswer(){
 	const correctAnswer = currentQuestion.answer;
 
 
-	if (userAnswer === correctAnswer)
-		score++;
-	 
-
-	 scoreElement.textContent = 'Score: ' + score + ' Correct!';
+	if (userAnswer === correctAnswer){
+		  score++;
+			scoreElement.textContent = 'Score: ' + score +' Correct!' ;}
+   else{
+   	scoreElement.textContent ='Score: ' + score  + ' Wrong!'
+   }
 
 	 
 
